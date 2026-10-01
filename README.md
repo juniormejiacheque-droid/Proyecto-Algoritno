@@ -1,0 +1,2 @@
+# Proyecto-Algoritno
+precalculo/proyect
