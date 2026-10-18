@@ -19,3 +19,14 @@ while continuar == True:
     print("4. Salir")
     
         opcion = input("Elige una opción (1-4): ")
+OPCIÓN 1: CLIENTES (Añadir dentro del while, después del input de opción)
+    if opcion == "1":
+        print("\n--- REGISTRAR CLIENTE ---")
+        nit = input("Ingresa el NIT: ")
+        nombre = input("Ingresa el Nombre: ")
+        
+        # Guardar en archivo de texto plano de forma sencilla
+        archivo = open("clientes.txt", "a")
+        archivo.write(nit + "," + nombre + "\n")
+        archivo.close()
+        print("¡Cliente guardado con éxito!")
