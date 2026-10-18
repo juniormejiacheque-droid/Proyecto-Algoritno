@@ -30,3 +30,20 @@ OPCIÓN 1: CLIENTES (Añadir dentro del while, después del input de opción)
         archivo.write(nit + "," + nombre + "\n")
         archivo.close()
         print("¡Cliente guardado con éxito!")
+# OPCION 2: REGISTRAR REPUESTO
+    elif opcion == "2":
+        print("\n--- REGISTRAR REPUESTO ---")
+
+        codigo = input("Codigo del repuesto: ")
+        nombre_rep = input("Nombre del repuesto: ")
+        precio = input("Precio: ")
+        stock = input("Cantidad en stock: ")
+
+        archivo = open("repuestos.txt", "a")
+        archivo.write(
+            codigo + "," + nombre_rep + "," +
+            precio + "," + stock + "\n"
+        )
+        archivo.close()
+
+        print("¡Repuesto guardado con exito!")
