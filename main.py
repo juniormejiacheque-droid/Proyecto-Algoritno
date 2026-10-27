@@ -1409,5 +1409,5 @@ def main():
       print("[!] Opción incorrecta, ingresa un número del 1 al 10.")
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":
   main()
